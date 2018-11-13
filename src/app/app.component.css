@@ -105,7 +105,7 @@
 
 /* Social/Footer */
 .footer {
-    padding-top: 10%;
+    padding-top: 200px;
     padding-bottom: 1%;
 }
 
@@ -115,6 +115,8 @@
 
 .skybox-bg {
     background-image: url('/assets/img/footer.jpg');
+    position: relative;
+    z-index: 90;
 }
 
 .social-badges {
