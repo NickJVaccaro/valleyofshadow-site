@@ -61,18 +61,28 @@
       <h1>Join the Newsletter</h1>
       <p>Sign up and we will email out a newsletter every once in a while to keep you updated with major news!</p>
       <div class="col-xl-4 offset-xl-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-          <form action="https://synersteel.us10.list-manage.com/subscribe/post?u=3c4255b0f2add1624ed41ab37&amp;id=53531987d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll" class="form-group">
-              <input type="email" value="" name="EMAIL" class="form-control email-input" id="mce-EMAIL" placeholder="Email Address" required>
-              
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_3c4255b0f2add1624ed41ab37_53531987d9" tabindex="-1" value="">
-              </div>
+        <form *ngIf="showForm" (ngSubmit)="onSubmit()" #emailForm="ngForm">
+          <div id="mc_embed_signup_scroll" class="form-group">
 
-              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-block form-control">
+            <input type="email" name="emailInput" class="form-control email-input" placeholder="Email Address" 
+              required [(ngModel)]="emailAddress" email>
+            
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_3c4255b0f2add1624ed41ab37_53531987d9" tabindex="-1" value="">
             </div>
+
+            <button type="submit" class="btn btn-primary btn-block form-control" [disabled]="emailForm.form.invalid">
+              Subscribe
+            </button>
+          </div>
         </form>
+        <div *ngIf="showError" class="alert alert-danger">
+          <strong>Something Went Wrong</strong><br/>{{errorMessage}}
+        </div>
+        <div *ngIf="!showForm" class="alert alert-success">
+          <strong>Success!</strong> Thank you for signing up!
+        </div>
       </div>
     </div>
   </div>

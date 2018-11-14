@@ -43,6 +43,7 @@
     padding-top: 50px;
     z-index: 98;
     position: relative;
+    bottom: -1px;
 }
 
 .parallax {
@@ -104,7 +105,7 @@
 
 /* Social/Footer */
 .footer {
-    padding-top: 10%;
+    padding-top: 200px;
     padding-bottom: 1%;
 }
 
@@ -114,6 +115,8 @@
 
 .skybox-bg {
     background-image: url('/assets/img/footer.jpg');
+    position: relative;
+    z-index: 90;
 }
 
 .social-badges {
@@ -159,7 +162,7 @@
     color: #ccc;
 }
 
-.btn-primary:hover {
+.btn-primary:active:hover {
     background-color: rgb(60, 0, 110);
     color: white;
 }
