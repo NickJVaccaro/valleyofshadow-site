@@ -162,7 +162,7 @@
     color: #ccc;
 }
 
-.btn-primary:hover {
+.btn-primary:active:hover {
     background-color: rgb(60, 0, 110);
     color: white;
 }
