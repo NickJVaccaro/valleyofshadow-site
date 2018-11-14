@@ -24,11 +24,17 @@
 @media only screen and (max-width: 768px) {
     .game-title {
         padding-top: 50px;
-        padding-bottom: 600px;
+        padding-bottom: 450px;
     }
 
     .game-title > h1 {
-        font-size: 7em;
+        font-size: 5em;
+    }
+}
+
+@media only screen and (max-height: 640px) {
+    .game-title {
+        padding-bottom: 300px;
     }
 }
 
@@ -51,6 +57,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .parallax {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .game-title > h1 {
+        position: relative;
+    }
 }
 
 /* Body */
