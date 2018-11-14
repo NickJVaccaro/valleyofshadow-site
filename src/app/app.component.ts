@@ -17,10 +17,6 @@ export class AppComponent {
   errorMessage : string;
 
   public onSubmit() {
-    var postData = {
-      EMAIL: this.emailAddress
-    };
-
     var mcUrl = "https://synersteel.us10.list-manage.com/subscribe/post-json?u=3c4255b0f2add1624ed41ab37&id=53531987d9&EMAIL="
       + this.emailAddress;
 
