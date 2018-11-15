@@ -1,15 +1,24 @@
 [
     {
-        "filename": "assets/img/screenshots/ss1.jpg",
-        "description": "Some description of what's happening in the game."
+        "filename": "assets/img/screenshots/07.jpg",
+        "description": ""
     }, {
-        "filename": "assets/img/screenshots/ss2.jpg",
-        "description": "Some other description of what's happening in the game."
+        "filename": "assets/img/screenshots/18.jpg",
+        "description": ""
     }, {
-        "filename": "assets/img/screenshots/ss3.gif",
-        "description": "Get ready to be spooked."
+        "filename": "assets/img/screenshots/27.jpg",
+        "description": ""
     }, {
-        "filename": "assets/img/screenshots/ss4.jpg",
-        "description": "Is anyone still reading this?"
+        "filename": "assets/img/screenshots/31.jpg",
+        "description": ""
+    }, {
+        "filename": "assets/img/screenshots/38.jpg",
+        "description": ""
+    }, {
+        "filename": "assets/img/screenshots/41.jpg",
+        "description": ""
+    }, {
+        "filename": "assets/img/screenshots/48.jpg",
+        "description": ""
     }
 ]
