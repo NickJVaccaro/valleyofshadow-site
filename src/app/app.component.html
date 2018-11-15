@@ -56,6 +56,8 @@
     </div>
   </div>
   <hr/>
+  <app-screenshots></app-screenshots>
+  <hr/>
   <div class="row">
     <div class="col-lg text-center">
       <h1>Join the Newsletter</h1>
@@ -78,7 +80,9 @@
           </div>
         </form>
         <div *ngIf="showError" class="alert alert-danger">
-          <strong>Something Went Wrong</strong><br/>{{errorMessage}}
+          <strong>Something Went Wrong</strong>
+          <br/>
+          <div innerHTML="{{errorMessage}}"></div>
         </div>
         <div *ngIf="!showForm" class="alert alert-success">
           <strong>Success!</strong> Thank you for signing up!

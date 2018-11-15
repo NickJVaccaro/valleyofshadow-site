@@ -1,0 +1,15 @@
+[
+    {
+        "filename": "assets/img/screenshots/ss1.jpg",
+        "description": "Some description of what's happening in the game."
+    }, {
+        "filename": "assets/img/screenshots/ss2.jpg",
+        "description": "Some other description of what's happening in the game."
+    }, {
+        "filename": "assets/img/screenshots/ss3.gif",
+        "description": "Get ready to be spooked."
+    }, {
+        "filename": "assets/img/screenshots/ss4.jpg",
+        "description": "Is anyone still reading this?"
+    }
+]
