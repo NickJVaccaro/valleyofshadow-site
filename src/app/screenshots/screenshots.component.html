@@ -4,7 +4,7 @@
       <br/>
     </div>
   <div class="col-xl-6 offset-xl-3 col-md-8 offset-md-2">
-    <div id="screenshotCarousel" class="carousel slide" data-ride="carousel">
+    <div id="screenshotCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
           <div *ngFor="let screenshot of screenshots; let i = index" class="carousel-item" [ngClass]="{'active':i == 0}">
             <a href="{{screenshot.filename}}" target="_blank">
