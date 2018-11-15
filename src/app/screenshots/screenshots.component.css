@@ -1,0 +1,11 @@
+.screenshotDescription {
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.carousel-inner {
+    border-radius: 5px;
+}
