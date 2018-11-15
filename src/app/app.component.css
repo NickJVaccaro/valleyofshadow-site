@@ -1,6 +1,7 @@
 /* Hero Banner */
 .vos-hero {
     background-image: url('/assets/img/heroImage.jpg');
+    background-color: indigo;
 }
 
 .game-title {
