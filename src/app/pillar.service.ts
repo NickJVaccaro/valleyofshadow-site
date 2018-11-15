@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Screenshot } from './screenshot';
+import { Pillar } from './pillar';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ScreenshotService {
+export class PillarService {
 
   constructor(private http: HttpClient) { }
 
-  public getScreenshots(): Observable<Screenshot[]> {
-    return this.http.get<Screenshot[]>("./assets/data/screenshots.json");
+  public getPillars(): Observable<Pillar[]> {
+    return this.http.get<Pillar[]>("./assets/data/gamepillars.json");
   }
 }

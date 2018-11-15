@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ScreenshotsComponent } from './screenshots/screenshots.component';
+import { PillarsComponent } from './pillars/pillars.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ScreenshotsComponent
+    ScreenshotsComponent,
+    PillarsComponent
   ],
   imports: [
     BrowserModule,

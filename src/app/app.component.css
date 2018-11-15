@@ -90,38 +90,6 @@
     text-shadow: 0px 0px 20px white;
 }
 
-.pillar {
-    margin-top: 25px;
-}
-
-.pillar .pillar-icon {
-    transition: filter 2s;
-}
-
-.pillar:hover .pillar-icon {
-    filter: drop-shadow(0px 0px 10px white);
-    transition: filter 0.2s;
-    cursor: default;
-}
-
-.pillar > h2 {
-    text-align: center;
-}
-
-.pillar > p {
-    text-align: justify;
-}
-
-.pillar-icon {
-    color: white;
-    text-align: center;
-    display: block;
-    width: 60px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Social/Footer */
 .footer {
     padding-top: 200px;
