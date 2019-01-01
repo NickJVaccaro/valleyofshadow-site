@@ -3,21 +3,16 @@
         "index": 0,
         "icon": "assets/img/icons/light.png",
         "title": "Non-Repetitive Puzzles",
-        "description": "The core of Valley of Shadow is solving environmental puzzles. Rather than solving multiple iterations of the same puzzle over and over with increasing difficulty, we believe that each puzzle should be unique and challenging."
+        "description": "The core of Valley of Shadow is solving puzzles. Rather than solving multiple iterations of the same puzzle over and over with increasing difficulty, we believe that each puzzle should be unique and challenging."
     }, {
         "index": 1,
-        "icon": "assets/img/icons/missile.png",
-        "title": "Meaningful Exploration",
-        "description": "Players who want to explore the world should be rewarded for doing so. Not just with vistas, but with actual content. Every corner you turn will hold something for you, whether it's a hidden puzzle, a key to the narrative, or an easter egg."
-    }, {
-        "index": 2,
         "icon": "assets/img/icons/fireball.png",
         "title": "Spells with Side Effects",
         "description": "Valley of Shadow explores the side effects of the most popular spells in fantasy - such as Light, Force Missile, and Fireball. Sure, a fireball can blast your enemies apart. But it can also ignite wood, or turn water to steam. Solve puzzles using these side effects."
     }, {
-        "index": 3,
-        "icon": "assets/img/icons/lightning.png",
-        "title": "A Dangerous World",
-        "description": "When you step into Valley of Shadow, you are entering a nightmare, and it should not only look that way but feel that way. While traveling from one safe spot to the next, you'll have to constantly be prepared for the worst."
+        "index": 2,
+        "icon": "assets/img/icons/missile.png",
+        "title": "Meaningful Exploration",
+        "description": "Players who want to explore the world should be rewarded for doing so. Not only with vistas, but with actual content as well. Every corner you turn will hold something for you, whether it's a hidden puzzle, a key to the narrative, or an easter egg."
     }
 ]
