@@ -45,6 +45,42 @@
     100% { text-shadow: 0px 0px 10px #fff; color: #ccc;}
 }
 
+.demo-link {
+    text-align: center;
+}
+
+.demo-link:hover {
+    text-decoration: none;
+}
+
+.demo-link:hover p {
+    color: white;
+}
+
+.demo-link:hover h2 {
+    animation: none;
+    color: white;
+}
+
+.demo-link > h2 {
+    margin-bottom: 0;
+    animation: blink-demo 2s ease-in-out infinite;
+}
+
+.demo-link > p {
+    transition: .25s;
+    color: gray;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.25em;
+    margin-top: -5px;
+}
+
+@keyframes blink-demo {
+    0% { color: white; }
+    50% { color: gray; }
+    100% { color: white; }
+}
+
 .hero-hr {
     background-image: linear-gradient(to bottom, transparent, indigo);
     padding-top: 50px;
