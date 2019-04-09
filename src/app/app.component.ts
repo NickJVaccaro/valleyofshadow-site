@@ -1,6 +1,9 @@
 import { Component, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { Angulartics2 } from 'angulartics2';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +12,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
 export class AppComponent {
-  constructor(private http : HttpClient) {}
+  constructor(private http : HttpClient, angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics, private angulartics2: Angulartics2) {
+    angulartics2GoogleAnalytics.startTracking();
+    this.angulartics2.eventTrack.next({
+      action: 'pageview'
+    });
+  }
 
   emailAddress : string;
   showForm = true;
