@@ -4,15 +4,19 @@
     background-color: indigo;
 }
 
-.top-socials {
+.socials {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 25px;
 }
 
-.top-socials > a {
+.socials > a {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.socials-bottom {
+    margin-top: 30px;
 }
 
 .fa-discord {
@@ -48,9 +52,14 @@
     }
 }
 
-@media only screen and (max-height: 640px) {
+@media only screen and (max-height: 768px) {
     .game-title {
         padding-bottom: 300px;
+        padding-top: 50px
+    }
+
+    .game-title > h1 {
+        font-size: 5em;
     }
 }
 
@@ -65,6 +74,8 @@
     position: fixed;
     margin-top: -60px;
     width: 100%;
+
+    z-index: 1;
 }
 
 .demo-div > h2 {
@@ -77,8 +88,16 @@
     color: gray;
     font-family: 'IM Fell English SC', serif;
     font-size: 1.25em;
-    
-    animation: blink-demo 2s ease-in-out infinite;
+}
+
+.blink {
+    animation: blink-anim 2s ease-in-out infinite;
+}
+
+@keyframes blink-anim {
+    0% { color: white; }
+    50% { color: gray; }
+    100% { color: white; }
 }
 
 .demo-link {
@@ -92,10 +111,8 @@
     animation: none;
 }
 
-@keyframes blink-demo {
-    0% { color: white; }
-    50% { color: gray; }
-    100% { color: white; }
+.demo-link > .fab {
+    margin-bottom: 10px;
 }
 
 .hero-hr {
@@ -135,7 +152,8 @@
 }
 
 .vos-body > hr,
-.vos-body > .row > hr {
+.vos-body > .row > hr,
+.skybox-bg > .row > hr {
     margin-top: 40px;
     margin-bottom: 40px;
 }
