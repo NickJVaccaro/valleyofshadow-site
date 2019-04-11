@@ -1,6 +1,9 @@
 import { Component, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { Angulartics2 } from 'angulartics2';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,12 +12,20 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
 export class AppComponent {
-  constructor(private http : HttpClient) {}
+  constructor(private http : HttpClient, angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics, private angulartics2: Angulartics2) {
+    angulartics2GoogleAnalytics.startTracking();
+    this.angulartics2.eventTrack.next({
+      action: 'pageview'
+    });
+  }
 
   emailAddress : string;
   showForm = true;
   showError = false;
   errorMessage : string;
+
+  pcDemoUrl = "https://www.dropbox.com/s/ta30tflr5845ysm/Valley%20of%20Shadow%20Demo.zip?dl=1";
+  macDemoUrl = "https://www.dropbox.com/s/tdnszw476zzg0hf/Valley%20of%20Shadow%20Demo%20-%20Mac.zip?dl=1";
 
   public onSubmit() {
     var mcUrl = "https://synersteel.us10.list-manage.com/subscribe/post-json?u=3c4255b0f2add1624ed41ab37&id=53531987d9&EMAIL="

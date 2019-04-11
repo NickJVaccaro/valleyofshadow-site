@@ -4,9 +4,28 @@
     background-color: indigo;
 }
 
+.socials {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.socials > a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.socials-bottom {
+    margin-top: 30px;
+}
+
+.fa-discord {
+    top: 10px;
+}
+
 .game-title {
     padding-top: 100px;
-    padding-bottom: 550px;
+    padding-bottom: 600px;
 }
 
 .game-title > h1 {
@@ -25,7 +44,7 @@
 @media only screen and (max-width: 768px) {
     .game-title {
         padding-top: 50px;
-        padding-bottom: 450px;
+        padding-bottom: 500px;
     }
 
     .game-title > h1 {
@@ -33,16 +52,67 @@
     }
 }
 
-@media only screen and (max-height: 640px) {
+@media only screen and (max-height: 768px) {
     .game-title {
         padding-bottom: 300px;
+        padding-top: 50px
+    }
+
+    .game-title > h1 {
+        font-size: 5em;
     }
 }
 
 @keyframes title-in {
     0% { text-shadow: 0px 0px 100px #444; color: transparent; }
-    25% { text-shadow: 0px 0px 20px #444; color: transparent; }
+    15% { text-shadow: 0px 0px 20px #444; color: transparent; }
     100% { text-shadow: 0px 0px 10px #fff; color: #ccc;}
+}
+
+.demo-div {
+    text-align: center;
+    position: fixed;
+    margin-top: -60px;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.demo-div > h2 {
+    color: gray;
+}
+
+.demo-div > p {
+    margin-bottom: 0;
+    margin-top: -5px;
+    color: gray;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.25em;
+}
+
+.blink {
+    animation: blink-anim 2s ease-in-out infinite;
+}
+
+@keyframes blink-anim {
+    0% { color: white; }
+    50% { color: gray; }
+    100% { color: white; }
+}
+
+.demo-link {
+    color: gray;
+}
+
+.demo-link:hover {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px white;
+    animation: none;
+}
+
+.demo-link > .fab {
+    margin-bottom: 10px;
 }
 
 .hero-hr {
@@ -75,14 +145,15 @@
 
 /* Body */
 .vos-body {
-    padding-top: 40px;
+    padding-top: 20px;
     z-index: 99;
     position: relative;
     background-image: linear-gradient(to bottom, indigo, black);
 }
 
 .vos-body > hr,
-.vos-body > .row > hr {
+.vos-body > .row > hr,
+.skybox-bg > .row > hr {
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -124,12 +195,14 @@
     transition-property: text-shadow, color;
 }
 
-.fa-twitter-square:hover {
+.fa-twitter-square:hover,
+.fa-twitter:hover {
     text-shadow: 0px 0px 10px #1DA1F2;
     color: #1DA1F2;
 }
 
-.fa-facebook-square:hover {
+.fa-facebook-square:hover,
+.fa-facebook-f:hover {
     text-shadow: 0px 0px 10px #3b5998;
     color: #3b5998;
 }
