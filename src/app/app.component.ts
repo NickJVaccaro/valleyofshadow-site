@@ -24,7 +24,7 @@ export class AppComponent {
   showError = false;
   errorMessage : string;
 
-  pcDemoUrl = "https://www.dropbox.com/s/ta30tflr5845ysm/Valley%20of%20Shadow%20Demo.zip?dl=1";
+  pcDemoUrl = "https://www.dropbox.com/s/a4x0ishfr67a7ch/Valley%20of%20Shadow%20Demo.zip?dl=1";
   macDemoUrl = "https://www.dropbox.com/s/tdnszw476zzg0hf/Valley%20of%20Shadow%20Demo%20-%20Mac.zip?dl=1";
 
   public onSubmit() {
