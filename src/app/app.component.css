@@ -217,6 +217,11 @@
     color: #6441A4;
 }
 
+.fa-instagram:hover {
+    text-shadow: 0px 0px 10px #DD2A7B;
+    color: #DD2A7B;
+}
+
 .btn-primary {
     background-color: indigo;
     border-color: indigo;
