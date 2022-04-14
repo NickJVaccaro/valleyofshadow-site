@@ -1,0 +1,17 @@
+.press {
+    padding-top: 64px;
+    color: white;
+}
+
+.press .container {
+    max-width: 800px;
+}
+
+.fact strong {
+    display: block;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}

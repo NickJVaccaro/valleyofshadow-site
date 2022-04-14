@@ -1,0 +1,83 @@
+<div class="vos-hero parallax">
+    <div class="game-title">
+      <h1>Valley of Shadow</h1>
+    </div>
+    <div class="hero-hr"></div>
+  </div>
+  <div class="container-fluid vos-body fade-to-black">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h3><span class="glow-text">Valley of Shadow</span> is an autobiographical puzzle game.</h3>
+        <p>Cast spells, solve puzzles, and unravel the truth of a dark world.</p>
+      </div>
+    </div>
+    <app-screenshots></app-screenshots>
+    <hr/>
+    <div class="row">
+      <div class="col-xl-6 offset-xl-3 col-md-8 offset-md-2 text-center">
+        <h3>Play the demo</h3>
+        <p>Download the demo & play the entire first Vault through Steam:</p>
+        <iframe src="https://store.steampowered.com/widget/1414030/" frameborder="0" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+    <!-- <app-pillars></app-pillars> -->
+    <!-- <hr/> -->
+  </div>
+  <div class="container-fluid skybox-bg parallax">
+    <div class="row fade-to-clear">
+      <hr/>
+      <div class="col-xl-4 offset-xl-2 col-md-6">
+        <div class="col-lg text-center">
+          <h2>Join the Newsletter</h2>
+          <p>Sign up for monthly development updates!</p>
+          <div class="col-md-10 offset-md-1 col-sm-8 offset-sm-2">
+            <form *ngIf="showForm" (ngSubmit)="onSubmit()" #emailForm="ngForm">
+              <div id="mc_embed_signup_scroll" class="form-group">
+    
+                <input type="email" name="emailInput" class="form-control email-input" placeholder="Email Address" 
+                  required [(ngModel)]="emailAddress" email>
+                
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_3c4255b0f2add1624ed41ab37_53531987d9" tabindex="-1" value="">
+                </div>
+    
+                <button type="submit" class="btn btn-primary btn-block form-control" [disabled]="emailForm.form.invalid">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <div *ngIf="showError" class="alert alert-danger">
+              <strong>Something Went Wrong</strong>
+              <br/>
+              <div innerHTML="{{errorMessage}}"></div>
+            </div>
+            <div *ngIf="!showForm" class="alert alert-success">
+              <strong>Success!</strong> Thank you for signing up!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6 text-center">
+        <h2>Follow Development</h2>
+        <p>Valley of Shadow is still actively in development. Click below to follow along!</p>
+        <div class="text-center socials socials-bottom">
+          <a href="https://discord.gg/QrDNXr9" class="fab fa-discord fa-3x fa-clickable" target="_blank"></a>
+          <a href="https://twitter.com/ValleyOfShadow0" class="fab fa-twitter fa-3x fa-clickable" target="_blank"></a>
+          <a href="https://www.instagram.com/valleyofshadowgame/" class="fab fa-instagram fa-3x fa-clickable" target="_blank"></a>
+        </div>    
+      </div>
+      <div class="col-lg-12">
+        <div class="text-center text-small footer">
+          <code>
+            made by <a href="http://synersteel.com" target="_blank">synersteel studio</a><br/>
+            web dev help by <a href="https://ninamusser.com" target="_blank">nina musser</a><br/>
+            <!-- icons by Lorc (<a href="https://game-icons.net/lorc/originals/sunbeams.html" target="_blank">sunbeams</a>, 
+            <a href="https://game-icons.net/lorc/originals/ink-swirl.html" target="_blank">ink swirl</a>,
+            <a href="https://game-icons.net/lorc/originals/lightning-helix.html" target="_blank">lightning helix</a>)
+            and sbed (<a href="https://game-icons.net/sbed/originals/flamer.html" target="_blank">flamer</a>)<br/> -->
+          </code>
+        </div>
+      </div>
+    </div>
+  </div>
