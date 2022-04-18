@@ -7,7 +7,7 @@ h1, h2, h3 {
     color: #ddd;
 }
 
-p, .form-control {
+p, .form-control, li {
     color: #ddd;
     font-family: 'Lato', sans-serif;
 }
