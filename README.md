@@ -1,5 +1,5 @@
 # valleyofshadow-site
-Website for the video game Valley of Shadow. View the running site at https://valleyofshadowgame.com.
+Website for the video game Valley of Shadow. View the running site at https://valleyofshadow.com.
 
 ### Main Features
   - Built completely in Angular + Bootstrap.
