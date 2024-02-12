@@ -17,6 +17,8 @@
     z-index: 98;
     position: relative;
     bottom: -1px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .parallax {
@@ -96,6 +98,12 @@
 
 .social-buttons {
     margin-top: 70px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .social-buttons > a {
+        width: 250px;
+    }
 }
 
 .btn-social {
