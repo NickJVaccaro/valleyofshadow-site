@@ -231,9 +231,6 @@ MIT
 @angular/router
 MIT
 
-@angular/forms
-MIT
-
 angulartics2
 MIT
 The MIT License (MIT)
@@ -261,6 +258,9 @@ SOFTWARE.
 
 
 angulartics2/ga
+MIT
+
+@angular/forms
 MIT
 
 angulartics2/routerlessmodule
