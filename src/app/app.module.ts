@@ -15,6 +15,7 @@ import { Angulartics2Module } from 'angulartics2';
 import { ScreenshotsComponent } from './screenshots/screenshots.component';
 import { PillarsComponent } from './pillars/pillars.component';
 import { NavComponent } from './nav/nav.component';
+import { CreditsComponent } from './pages/credits';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NavComponent } from './nav/nav.component';
     PillarsComponent,
     NavComponent,
     HomeComponent,
-    PressComponent
+    PressComponent,
+    CreditsComponent
   ],
   imports: [
     BrowserModule,

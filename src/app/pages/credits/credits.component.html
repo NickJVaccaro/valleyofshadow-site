@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <p>This is a list of all free third-party assets used in Valley of Shadow which require attribution.</p>
+    <div class="row">
+        <ul>
+            <div *ngFor="let credit of credits; let i = index">
+                <li><a href="{{credit.url}}" target="_blank">{{credit.name}}</a> <i>by {{credit.author}}</i></li>
+            </div>
+        </ul>
+    </div>
+  </div>
